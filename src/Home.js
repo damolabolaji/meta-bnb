@@ -1,15 +1,17 @@
 
 import Hero from './Hero'
 import Sponsors from './Sponsors'
+import Featured from './Featured'
 
 
 const Home = () => {
     return ( 
         <div>
-             <Hero />
-             <Sponsors />
-
+            <Hero />
+            <Sponsors />
+            <Featured/>
         </div>
+         
        
      );
 }
