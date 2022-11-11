@@ -15,11 +15,22 @@
   margin: 0 auto;
 }
 
+section {
+  display: flex;
+  justify-content: space-between;
+  width: 124rem;
+  margin: 0 auto;
+  
+}
+
+
+/* ------ Navbar ------- */
+
 nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 3.1rem;
+  padding-top: 3.1rem;
   max-width: 124rem;
   margin: 0 auto;
 }
@@ -129,6 +140,23 @@ nav ul a {
 }
 
 
+/* ----- Sponsors ------ */
+
+section.sponsors {
+ width: 144rem;
+  background-color: #A02279;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+ 
+}
+
+.sponsor-logo {
+  width: 120rem;
+}
+.sponsors img {
+  width: 21rem;
+}
+
 
 
 /* ----- Footer----- */
@@ -139,13 +167,7 @@ footer {
   padding: 6.3rem 0 2rem;
 }
 
-section {
-  display: flex;
-  justify-content: space-between;
-  width: 124rem;
-  margin: 0 auto;
-  
-}
+
 
 section div:first-child {
   display: flex;

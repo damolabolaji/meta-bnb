@@ -8,7 +8,7 @@ const NavBar = () => {
     return ( 
         <nav>
 
-            <img src={MetaLogo} alt="" />
+            <img src={MetaLogo} alt="meta logo" />
 
             <ul>
                 <li><a href="">Home</a></li>
