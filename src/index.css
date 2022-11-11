@@ -51,18 +51,85 @@ nav ul a {
 
 
 .btn {
-
   background-color: #A02279;
   color: white;
   font-size: 1.6rem;
   text-decoration: none;
-  border-radius: 10px;
-  width: 17rem;
-  height: 4.8rem;
   text-align: center;
+
+}
+
+.connect-btn {
+  width: 17rem;
+  border-radius: 10px;
   line-height: 4.8rem;
 }
 
+/* ----- Homepage ----- */
+
+.hero-section {
+  gap: 100px;
+  padding: 12.5rem 0 6.7rem;
+}
+
+.hero-section .intro {
+  justify-content: unset;
+  padding: 3rem 0;
+  height: 400px;
+  
+}
+
+.hero-section img {
+  width: 47.6rem;
+}
+
+.hero-section h1 {
+  font-size: 5.6rem;
+  line-height: 140%;
+}
+
+.hero-section span {
+  font-size: inherit;
+  color: #A02279;
+}
+
+.hero-section p {
+  font-size: 2.4em;
+  line-height: 35px;
+  color: #434343;
+  margin-top: 4.8rem;
+}
+
+.search {
+ height: 5.4rem;
+ margin-top: 4.8rem;
+}
+
+.search input {
+  width: 39rem;
+  height: 5.4rem;
+  padding: 2rem 1rem;
+  border-radius: 8px 0 0 8px;
+  border: 1px solid #A3A3A3;
+  display: inline-block;
+}
+
+::placeholder {
+  color: #B8B8B8;
+}
+
+.search-btn {
+  display: inline-block;
+  width: 23rem;
+  line-height: 5.4rem;
+  border-radius: 0 8px 8px 0;
+  text-align: center;
+}
+
+
+
+
+/* ----- Footer----- */
 
 footer {
   background-color: #1D1D1E;

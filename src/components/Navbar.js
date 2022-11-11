@@ -17,7 +17,7 @@ const NavBar = () => {
                 <li><a href="">Community</a></li>
             </ul>
 
-            <a href="" className="btn">Connect Wallet</a>
+            <a href="" className="btn connect-btn">Connect Wallet</a>
             
         </nav>
      );
