@@ -1,4 +1,7 @@
-import Heroimage from './images/hero-image.png'
+import Hero1 from './images/herosusan.png'
+import Hero2 from './images/heros9.png'
+import Hero3 from './images/heros2.png'
+import Hero4 from './images/herodruid4.png'
 
 
 const Hero = () => {
@@ -14,7 +17,22 @@ const Hero = () => {
             </div>
         </div>
 
-        <img src={Heroimage} alt="" />
+        <div className='hero-image'>
+
+            <div>
+                <img src={Hero1} alt="" />
+                <img src={Hero2} alt="" />
+            </div>
+
+            <div>
+                <img src={Hero3} alt="" />
+                <img src={Hero4} alt="" />
+            </div>
+            
+            
+        </div>
+
+      
 
     </section>
      );

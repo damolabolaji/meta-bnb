@@ -62,7 +62,7 @@ nav ul a {
 }
 
 nav img {
-  width: 233px;
+  width: 23.3rem;
  
 }
 
@@ -85,15 +85,22 @@ nav ul a {
 
 .hero-section {
   padding: 12.5rem 0 6.7rem;
-  /* flex-wrap: wrap; */
  
 }
 .hero-section .intro {
   flex: 48%;
 }
 
-.hero-section img {
+.hero-image {
+  display: flex;
   margin-left: 100px;
+}
+
+.hero-section img {
+  max-width: 100%;
+}
+.hero-image div {
+  width: 23.4rem;
 }
 
 .hero-section h1 {
@@ -117,6 +124,7 @@ nav ul a {
  height: 5.4rem;
  margin-top: 4.8rem;
  display: flex;
+
 }
 
 .search input {
@@ -168,12 +176,14 @@ section.sponsors {
 .featured {  
   display: flex;
   flex-direction: column;
+  padding-bottom: 5rem;
 }
 
 .featured h2 {
   font-size: 4.8rem;
   color: #000;
   text-align: center;
+  padding: 4.5rem 0;
 }
 
 .featured-places {
@@ -181,6 +191,7 @@ section.sponsors {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(29rem,1fr));
   gap: 2.4rem;
+  
 }
 
 .card {
@@ -369,15 +380,53 @@ footer h4 span {
 
 /* ----- Media Queries ------ */
 
-@media screen and (max-width: 768px) {
-
-
-  /* ----- Navbar ------ */
-
+@media screen and (max-width: 1240px){
   nav {
     padding-left: 5rem;
     padding-right: 5rem;
   }
+
+  nav ul a {
+    font-size: 1.6rem;
+    margin-right: 2rem;
+  }
+
+  nav img {
+    width: 20rem;
+   
+  }
+
+  /* ---Hero section---- */
+  .hero-section {
+    flex-wrap: wrap;
+   }
+   .hero-section .intro {
+     padding-left: 50px;
+     padding-right: 50px;
+   }
+   .hero-section h1 {
+     font-size: 5rem;
+   }
+   .hero-section p {
+     font-size: 1.8rem;
+   }
+   .hero-section img {
+    padding: 5rem;
+    margin: 0 auto;
+    width: 80%;
+  }
+
+  .featured-places {
+    padding: 0 5rem;
+  }
+
+}
+
+
+@media screen and (max-width: 768px) {
+
+
+  /* ----- Navbar ------ */
 
   nav ul {
     display: none;
@@ -387,31 +436,19 @@ footer h4 span {
   
   /* ------Hero Section -------- */
 
-  .hero-section {
-   flex-wrap: wrap;
-  }
-  .hero-section .intro {
-    padding-left: 50px;
-    padding-right: 50px;
-  }
+  
   .hero-section h1 {
     font-size: 4.5rem;
   }
-  .hero-section p {
-    font-size: 1.8rem;
-  }
-  .hero-section img {
-    /* padding: 10rem 5rem 5rem;
-    margin: 0 auto; */
-    display: none;
+
+  /* .hero-section img {
+     display: none;
     
-  }
+  } */
 
   /* ----- Featured ------ */
 
-  .featured-places {
-    padding: 0 5rem;
-  }
+  
 
 
 
@@ -457,18 +494,39 @@ footer h4 span {
 
 
   /* ----- Learn More ----- */
+  div.learnmore {
+    height: 60rem;
+  }
+
   .learnmore section {
     flex-direction: column;
     text-align: center;
-    padding-top: 3rem;
+    padding-top: 4rem;
+    height: 400px;
+  }
+  .images {
+    display: flex;
+    margin-top: 4rem;
+    padding-left: 0;
+    width: 600px;
+    height: auto;
   }
 
   .images img {
-    position: relative;
+
+    position: unset;
     border-radius: 10px;
     bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    transform: rotate(0);
+    width: 33%;
+  
   
    }
+
+   
 
 
 }
