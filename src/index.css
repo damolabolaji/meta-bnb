@@ -52,14 +52,17 @@ section {
 nav ul {
   list-style: none;
   display: flex;
+  align-items: center;
 }
 
-nav ul a {
+nav ul a{
   color: #434343;
   text-decoration: none;
   font-size: 2rem;
   margin-right: 4.8rem;
 }
+
+
 
 
 /* ------ Main Navbar ------- */
@@ -82,6 +85,19 @@ nav ul a {
   border-radius: 10px;
   line-height: 4.8rem;
   background-color: #A02279;
+  margin-right: 0;
+}
+
+.nav-btn {
+	padding: 5px;
+	cursor: pointer;
+	background: transparent;
+	border: none;
+	outline: none;
+	color: #A02279;
+	display: none;
+	opacity: 0;
+	font-size: 1.8rem;
 }
 
 /* ----- Homepage ----- */
@@ -414,6 +430,7 @@ footer h4 span {
   }
 
   /* ---Hero section---- */
+
   .hero-section {
     flex-direction: column;
    }
@@ -444,7 +461,7 @@ footer h4 span {
     padding-left: 50px;
   }
 
-  /* ------- Sponsor ------ */
+  /* ------- Sponsors ------ */
 
   .sponsor-logo {
     margin: 0 auto;
@@ -495,8 +512,6 @@ align-items: center;
 
   }
 
-
-
 .socials {
   padding: 5rem;
 }
@@ -517,9 +532,45 @@ align-items: center;
   /* ----- Navbar ------ */
 
   nav ul {
-    display: none;
+    position: fixed;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		gap: 1.5rem;
+		background-color: #A02279;
+		transition: 1s;
+		transform: translateY(-100vh);
+    z-index: 100;
   }
 
+  nav ul a {
+    color: #fff;
+  }
+
+  .responsive_nav {
+		transform: none;
+	}
+
+  .nav-btn {
+    display: block;
+		visibility: visible;
+		opacity: 1;
+	}
+
+  ul .nav-close-btn {
+		position: absolute;
+		top: 2rem;
+		right: 2rem;
+    color: #fff;
+	}
+  .connect-btn {
+    border: 1px solid #fff;
+  }
   
   /* ------Hero Section -------- */
   
@@ -527,6 +578,8 @@ align-items: center;
     font-size: 4.5rem;
   }
 
+
+  /* ------- Sponsors ------ */
 
   .sponsors img {
     width: 10rem;
@@ -598,4 +651,56 @@ align-items: center;
   }
 
 
+}
+
+@media screen and (max-width: 520px) {
+  h2 {
+    font-size: 2.2rem; 
+  }
+
+   /* ---Hero section---- */
+
+  .hero-section h1 {
+    font-size: 3.5rem;
+    text-align: center;
+  }
+  .hero-section p {
+    font-size: 1.4rem;
+    text-align: center;
+  }
+  .hero-section .intro {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  
+
+  .hero-image div {
+    width: 33%;
+    display: flex;
+    gap: 1.2rem;
+    transform: translateX(20%);
+    padding-left: 10px;
+    margin-left: 30px;
+  }
+
+/* ----- Featured ------ */
+
+  .featured h2 {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+
+  /* ------- Sponsors ------ */
+
+  .sponsor-logo {
+    flex-direction: column;
+    gap: 2rem;
+   
+  }
+
+  
+  .sponsors img {
+    margin: 0 auto;
+  }
 }
