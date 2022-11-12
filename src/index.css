@@ -328,6 +328,33 @@ div.learnmore {
  }
 
 
+ /* ------ Places to Stay page ------- */
+
+ /* .seconday-nav {
+   width: 124rem;
+ } */
+
+ .seconday-nav .btn {
+  color: #1D1D1E;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  width: 120px;
+  border-radius: 8px;
+  outline: none;
+  border: 1px solid  #B4B4B4;
+  
+  font-size: 1.4rem;
+ }
+
+ .seconday-nav {
+  max-width: 124rem;
+  padding-top: 40px;
+  margin: 40px auto;
+ }
+
+
 /* ----- Footer----- */
 
 footer {
@@ -616,6 +643,17 @@ align-items: center;
  }
 
 
+ /* ------ Places to Stay ------ */
+
+ .seconday-nav ul {
+  top: 20%;
+	height: 50%;
+  width: 50%;
+
+  
+ }
+
+
   /* --- Footer ----- */
 
   .footer-col,  footer section {
@@ -702,5 +740,16 @@ align-items: center;
   
   .sponsors img {
     margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .nav-btn {
+    font-size: 1.2rem;
+  }
+
+  .seconday-nav .btn {
+    font-size: 1.2rem;
+    margin-right: 0;
   }
 }
