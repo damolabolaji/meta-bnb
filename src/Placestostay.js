@@ -7,9 +7,9 @@ const PlaceToStay = () => {
        
         <div>
            <div>
-
+          
            </div>
-           
+
             <AllPlaces/>
         </div>
      );

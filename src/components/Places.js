@@ -3,7 +3,7 @@ import Star from '../images/icons/star.png';
 
 
 
-const PlacesCard = ({className}) => {
+const PlacesCard = () => {
     return (  
         <>
             <div className="card">

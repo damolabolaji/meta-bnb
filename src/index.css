@@ -37,6 +37,11 @@ section {
 
 }
 
+ h2 {
+  font-size: 4.8rem;
+  
+ }
+
 
 /* ------ Navbar ------- */
 
@@ -186,7 +191,7 @@ section.sponsors {
 }
 
 .featured h2 {
-  font-size: 4.8rem;
+
   color: #000;
   text-align: center;
   padding: 4.5rem 0;
@@ -240,14 +245,12 @@ div.learnmore {
  }
 
  .learnmore section {
-  display: flex;
-  align-items: center;
   padding-top: 20rem;
  }
 
 
  .learnmore h2 {
-  font-size: 4.8em;
+  
   color: #fff;
  }
 
@@ -269,8 +272,10 @@ div.learnmore {
 
  .images {
   position: relative;
-  height: 300px;
+  height: 450px;
   padding-left: 850px;
+  padding-bottom: 4rem;
+  margin: 6rem 0;
  }
 
  .images img {
@@ -330,11 +335,12 @@ section .company-details {
   padding-bottom: 20px;
 }
 
-
-
-.company-details i {
-  margin-right: 3.5rem;
+.socials {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
+
 
 .footer-logo {
   width: 23.3rem;
@@ -387,6 +393,13 @@ footer h4 span {
 /* ----- Media Queries ------ */
 
 @media screen and (max-width: 1240px){
+
+   h2 {
+    font-size: 4rem;
+  }
+
+  /* ----- Navbar ------ */
+
   nav {
     padding-left: 5rem;
     padding-right: 5rem;
@@ -404,7 +417,7 @@ footer h4 span {
 
   /* ---Hero section---- */
   .hero-section {
-    flex-wrap: wrap;
+    flex-direction: column;
    }
    .hero-section .intro {
      padding-left: 50px;
@@ -416,20 +429,91 @@ footer h4 span {
    .hero-section p {
      font-size: 1.8rem;
    }
-   .hero-section img {
-    padding: 5rem;
+  
+   .hero-image {
+    padding-top: 2rem;
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+  
+   }
+
+   .hero-image div {
+    width: 33%;
+    display: flex;
+    gap: 1.2rem;
+    transform: translateX(50%);
+    padding-left: 50px;
+  }
+
+  /* ------- Sponsor ------ */
+
+  .sponsor-logo {
     margin: 0 auto;
     width: 80%;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 3rem;
   }
+  .sponsors img {
+    width: 12rem;
+  }
+
+
+  /* ----- Featured ------ */
 
   .featured-places {
     padding: 0 5rem;
   }
 
+  /* ------ Learn More ------ */
+
+  
+  .learnmore p {
+    font-size: 1.6em;
+    margin: 20px 0 30px;
+   }
+.images {
+  transform: scale(.8);
+  padding-left: 550px;
+  translate: 10% 10%;
+}
+
+.learnmore .intro {
+  padding: 200px;
+}
+  
+}
+
+@media screen and (max-width: 1024px){
+  
+  footer section {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .company-details {
+align-items: center;
+
+  }
+
+
+
+.socials {
+  padding: 5rem;
+}
+  
+  .footer-logo {
+    width: 200px;
+ 
+  }
 }
 
 
 @media screen and (max-width: 768px) {
+  h2 {
+    font-size: 3rem; 
+  }
 
 
   /* ----- Navbar ------ */
@@ -438,24 +522,47 @@ footer h4 span {
     display: none;
   }
 
-
   
   /* ------Hero Section -------- */
-
   
   .hero-section h1 {
     font-size: 4.5rem;
   }
 
-  /* .hero-section img {
-     display: none;
-    
-  } */
 
-  /* ----- Featured ------ */
+  .sponsors img {
+    width: 10rem;
+  }
 
   
+ /* ----- Learn More ----- */
 
+ div.learnmore {
+  height: 50rem;
+}
+
+.learnmore section {
+  flex-direction: column;
+  text-align: center;
+  padding-top: 4rem;
+  height: 400px;
+}
+.images {
+ all: unset;
+ display: flex;
+ gap: 1rem;
+ margin-top: 5rem;
+}
+
+.images img {
+
+  all : unset;
+  width: 30%;
+  display: block;
+  border-radius: 10px;
+  margin: 0 auto;
+
+ }
 
 
   /* --- Footer ----- */
@@ -464,19 +571,12 @@ footer h4 span {
    flex-direction: column;
   }
 
- 
 
-  section .company-details { 
-    align-items: center;
-    justify-content: space-between;
-  }
-
-  .footer-logo, .socials {
-    width: 50%;
+  .footer-logo {
+    width: 80%;
   }
   .socials {
     text-align: center;
-    padding-top: 5rem;
   }
 
   .footer-col {
@@ -487,6 +587,7 @@ footer h4 span {
     border-top: 1px solid #fff;
     border-bottom: 1px solid #fff;
     padding: 5rem;
+    width: 100%;
   }
 
   .footer-col div {
@@ -499,45 +600,4 @@ footer h4 span {
   }
 
 
-  /* ----- Learn More ----- */
-  div.learnmore {
-    height: 60rem;
-  }
-
-  .learnmore section {
-    flex-direction: column;
-    text-align: center;
-    padding-top: 4rem;
-    height: 400px;
-  }
-  .images {
-    display: flex;
-    margin-top: 4rem;
-    padding-left: 0;
-    width: 600px;
-    height: auto;
-  }
-
-  .images img {
-
-    position: unset;
-    border-radius: 10px;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    top: 0;
-    transform: rotate(0);
-    width: 33%;
-  
-  
-   }
-
-   
-
-
 }
-
-
-
-
-
