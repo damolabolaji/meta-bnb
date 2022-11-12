@@ -94,13 +94,19 @@ nav ul a {
 .hero-image {
   display: flex;
   margin-left: 100px;
+  gap: 1.3rem;
 }
 
 .hero-section img {
   max-width: 100%;
+  margin-top: 1rem;
+  border-radius: 10px;
 }
 .hero-image div {
   width: 23.4rem;
+}
+.hero-image div:first-child {
+  margin-top: 10rem;
 }
 
 .hero-section h1 {
