@@ -15,6 +15,7 @@
 .App {
   max-width: 1440px;
   margin: 0 auto;
+
 }
 
 
@@ -71,8 +72,6 @@ nav ul a {
   font-size: 2rem;
   margin-right: 4.8rem;
 }
-
-
 
 
 .connect-btn {
@@ -145,18 +144,17 @@ nav ul a {
 /* ----- Sponsors ------ */
 
 section.sponsors {
- width: 144rem;
+ max-width: 144rem;
   background-color: #A02279;
   margin: 0 auto;
-  padding: 1rem 2rem;
- 
 }
 
 .sponsor-logo {
-  margin: 0 50px;
+  margin: 0 auto;
   width: 124rem;
   display: flex;
   justify-content: space-between;
+  padding: 1rem 3rem;
 }
 .sponsors img {
   width: 21rem;
@@ -211,6 +209,10 @@ section.sponsors {
 }
 
 
+/* ----- Learn More ----- */
+
+
+
 
 /* ----- Footer----- */
 
@@ -226,15 +228,14 @@ footer > section {
 }
 
 
-section div:first-child {
+section .company-details {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-}
-
-.company-details {
   padding-bottom: 20px;
 }
+
+
 
 .company-details i {
   margin-right: 3.5rem;
@@ -275,7 +276,7 @@ footer h3 {
 footer h4 {
   color: #fff;
   max-width: 124rem;
-  margin: 0 auto;
+  margin: 0 100px;
   padding: 3rem 0;
   font-size: 1.6rem;
   font-weight: 400;
@@ -286,6 +287,102 @@ footer h4 span {
   margin-right: 15px;
   vertical-align: middle;
 }
+
+
+/* ----- Media Queries ------ */
+
+@media screen and (max-width: 768px) {
+
+
+  /* ----- Navbar ------ */
+
+  nav {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+
+  nav ul {
+    display: none;
+  }
+
+
+  
+  /* ------Hero Section -------- */
+
+  .hero-section {
+   flex-wrap: wrap;
+  }
+  .hero-section .intro {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .hero-section h1 {
+    font-size: 4.5rem;
+  }
+  .hero-section p {
+    font-size: 1.8rem;
+  }
+  .hero-section img {
+    /* padding: 10rem 5rem 5rem;
+    margin: 0 auto; */
+    display: none;
+    
+  }
+
+  /* ----- Featured ------ */
+
+  .featured-places {
+    padding: 0 5rem;
+  }
+
+
+
+  /* --- Footer ----- */
+
+  .footer-col,  footer section {
+   flex-direction: column;
+  }
+
+ 
+
+  section .company-details { 
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .footer-logo, .socials {
+    width: 50%;
+  }
+  .socials {
+    text-align: center;
+    padding-top: 5rem;
+  }
+
+  .footer-col {
+    text-align: center;
+    gap: 5rem;
+    margin-right: unset;
+    margin: 4rem 0;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    padding: 5rem;
+  }
+
+  .footer-col div {
+    display: inline-block;
+  }
+
+  footer h4 {
+    text-align: center;
+    padding: 0;
+  }
+
+
+
+
+}
+
+
 
 
 
