@@ -2,6 +2,7 @@
 import Hero from './Hero'
 import Sponsors from './Sponsors'
 import Featured from './Featured'
+import LearnMore from './Learnmore'
 
 
 const Home = () => {
@@ -10,6 +11,7 @@ const Home = () => {
             <Hero />
             <Sponsors />
             <Featured/>
+            <LearnMore/>
         </div>
          
        

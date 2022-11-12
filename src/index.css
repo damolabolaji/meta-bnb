@@ -29,7 +29,7 @@ section {
 
 
 .btn {
-  background-color: #A02279;
+ 
   color: white;
   font-size: 1.6rem;
   text-decoration: none;
@@ -78,6 +78,7 @@ nav ul a {
   width: 17rem;
   border-radius: 10px;
   line-height: 4.8rem;
+  background-color: #A02279;
 }
 
 /* ----- Homepage ----- */
@@ -138,6 +139,7 @@ nav ul a {
   line-height: 5.4rem;
   border-radius: 0 8px 8px 0;
   text-align: center;
+  background-color: #A02279;
 }
 
 
@@ -211,7 +213,83 @@ section.sponsors {
 
 /* ----- Learn More ----- */
 
+div.learnmore {
 
+   background-color: #A02279;
+   margin: 0 auto;
+   max-width: 144rem;
+   height: 700px;
+   padding: 0 6rem;
+ }
+
+ .learnmore section {
+  display: flex;
+  align-items: center;
+  padding-top: 20rem;
+ }
+
+
+ .learnmore h2 {
+  font-size: 4.8em;
+  color: #fff;
+ }
+
+ .learnmore p {
+  font-size: 1.6em;
+  color: #fff;
+  line-height: 3.5rem;
+  margin: 30px 0 50px;
+ }
+
+
+ .learnmore a {
+  font-size: 1.4rem;
+ }
+
+ .images img {
+  width: 378px;
+ }
+
+ .images {
+  position: relative;
+  height: 300px;
+  padding-left: 850px;
+ }
+
+ .images img {
+  position: absolute;
+  border-radius: 10px;
+
+ }
+
+ .pic1 {
+  right: 10%;
+  top: -40%;
+  transform: rotate(8.76deg);
+  z-index: 1;
+ }
+
+ .pic2 {
+  right: 40%;
+  top: 10%;
+  transform: rotate(-26.02deg);
+  z-index: 2;
+ }
+ .pic3 {
+  right: 5%;
+  top: 20%;
+  transform: rotate(-8.76deg);
+  z-index: 3;
+ }
+
+ .learnmore-btn {
+  background-color: #fff;
+  color: #A02279;
+  display: inline-block;
+  width: 15rem;
+  border-radius: 10px;
+  line-height: 4.8rem;
+ }
 
 
 /* ----- Footer----- */
@@ -378,6 +456,19 @@ footer h4 span {
   }
 
 
+  /* ----- Learn More ----- */
+  .learnmore section {
+    flex-direction: column;
+    text-align: center;
+    padding-top: 3rem;
+  }
+
+  .images img {
+    position: relative;
+    border-radius: 10px;
+    bottom: 0;
+  
+   }
 
 
 }
