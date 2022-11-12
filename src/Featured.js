@@ -9,7 +9,7 @@ const Featured = () => {
             <h2>Inspiration for your next adventure</h2>
 
             <div className="featured-places">
-                <PlacesCard/>
+                <PlacesCard className={`${classes.indexOne}`}/>
                 <PlacesCard/>
                 <PlacesCard/>
                 <PlacesCard/>

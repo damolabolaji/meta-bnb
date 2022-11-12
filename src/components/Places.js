@@ -7,8 +7,8 @@ const PlacesCard = ({className}) => {
     return (  
         <>
             <div className="card">
-                <div>
-                    <img src="" alt="" className={className} />
+                <div className='nft-bg'>
+                   
                     <i><img src={Heart} alt="heart icon" /></i>
                 </div>
 
