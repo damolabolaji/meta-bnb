@@ -42,16 +42,11 @@ section {
   
  }
 
-
-/* ------ Navbar ------- */
-
-nav {
+ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 3.1rem;
-  max-width: 124rem;
-  margin: 0 auto;
+
 }
 
 nav ul {
@@ -66,16 +61,19 @@ nav ul a {
   margin-right: 4.8rem;
 }
 
-nav img {
-  width: 23.3rem;
- 
+
+/* ------ Main Navbar ------- */
+
+.main-nav {
+  padding-top: 3.1rem;
+  max-width: 124rem;
+  margin: 0 auto;
 }
 
-nav ul a {
-  color: #434343;
-  text-decoration: none;
-  font-size: 2rem;
-  margin-right: 4.8rem;
+
+.main-nav img {
+  width: 23.3rem;
+ 
 }
 
 
@@ -410,7 +408,7 @@ footer h4 span {
     margin-right: 2rem;
   }
 
-  nav img {
+  .main-nav img {
     width: 20rem;
    
   }

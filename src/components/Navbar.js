@@ -15,7 +15,7 @@ const NavBar = () => {
             <Route path='/Placestostay' element= {<PlaceToStay/>} />
         </Routes> ,
 
-        <nav>
+        <nav className='main-nav'>
 
 
             <Link to="/">
