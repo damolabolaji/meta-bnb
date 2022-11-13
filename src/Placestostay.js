@@ -49,7 +49,7 @@ const PlaceToStay = () => {
             
 
             <div className="featured-places">
-                <PlacesCard/>
+                <PlacesCard className="One"/>
                 <PlacesCard/>
                 <PlacesCard/>
                 <PlacesCard/>

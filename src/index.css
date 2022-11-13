@@ -62,6 +62,10 @@ nav ul a{
   margin-right: 4.8rem;
 }
 
+ul .nav-close-btn {
+  opacity: 0;
+}
+
 
 
 
@@ -222,10 +226,13 @@ section.sponsors {
 .card {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   border: 1px solid #D7D7D7;
   border-radius: 1.5rem;
   background: linear-gradient(124.4deg, #FFFFFF 10.8%, #FFFFFF 87.34%);
   padding: 2rem;
+  height: 38.5rem;
+
 }
 
 .card p {
@@ -240,13 +247,30 @@ section.sponsors {
   font-weight: 600;
 }
 
-.indexOne .nft-bg {
+.nft-pic {
   background-image: url(./images/druid6.png);
-  width: 100%;
-  height: 200px;
+  background-position: center;
+  background-size: cover;
+  max-width: 100%;
+  height: 26.5rem;
+  border: 1px solid #D7D7D7; 
+  border-radius: 1.5rem;
+  position: relative;
 }
 
+.nft-pic.one {
+  background-image: url(./images/aise1.png)
+}
 
+.card i {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+}
+
+.card div:last-child img {
+  margin-right: 1rem;
+}
 /* ----- Learn More ----- */
 
 div.learnmore {
@@ -330,9 +354,7 @@ div.learnmore {
 
  /* ------ Places to Stay page ------- */
 
- /* .seconday-nav {
-   width: 124rem;
- } */
+
 
  .seconday-nav .btn {
   color: #1D1D1E;
@@ -340,11 +362,10 @@ div.learnmore {
   align-items: center;
   justify-content: space-between;
   padding: 5px;
-  width: 120px;
+  width: 12rem;
   border-radius: 8px;
   outline: none;
   border: 1px solid  #B4B4B4;
-  
   font-size: 1.4rem;
  }
 
@@ -431,6 +452,8 @@ footer h4 span {
 }
 
 
+
+
 /* ----- Media Queries ------ */
 
 @media screen and (max-width: 1240px){
@@ -455,6 +478,9 @@ footer h4 span {
     width: 20rem;
    
   }
+
+  
+
 
   /* ---Hero section---- */
 
@@ -594,7 +620,9 @@ align-items: center;
 		top: 2rem;
 		right: 2rem;
     color: #fff;
+    opacity: 1;
 	}
+
   .connect-btn {
     border: 1px solid #fff;
   }
@@ -751,5 +779,6 @@ align-items: center;
   .seconday-nav .btn {
     font-size: 1.2rem;
     margin-right: 0;
+    width: 10rem;
   }
 }
