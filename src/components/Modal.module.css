@@ -101,3 +101,32 @@
     font-size: 18px;
     font-weight: 600;
   }
+
+  @media screen and (max-width: 768px) {
+    .modal {
+      width: 400px;
+     
+      
+    }
+  }
+
+  @media screen and (max-width: 520px) {
+    .modal {
+      width: 300px;
+      
+    }
+
+    .walletIcon {
+     display: none;
+    }
+
+    .heading {
+    
+      font-size: 18px;
+    }
+
+    .walletType {
+      font-size: 14px;
+    
+    }
+  }
