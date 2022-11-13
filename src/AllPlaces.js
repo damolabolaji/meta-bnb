@@ -6,7 +6,7 @@ const AllPlaces = () => {
 
         <div className="featured-places">
           
-            <PlacesCard className='one'/>
+            <PlacesCard/>
             <PlacesCard/>
             <PlacesCard/>
             <PlacesCard/>

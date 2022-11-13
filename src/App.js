@@ -21,6 +21,9 @@ function App() {
             <Route path='/Placestostay' element= {<PlaceToStay/>} />
         </Routes>
 
+
+
+    
      <Footer />
 
     </div>

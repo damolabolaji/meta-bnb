@@ -3,12 +3,14 @@
 //logo gradient DC3E88, B840AE, 843FE8
 
 import { Link, Route, Routes } from 'react-router-dom';
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 
 
 import Home from '../Home';
 import PlaceToStay from '../Placestostay'
+import Modal from './Modal'
+
 import MetaLogo from "../images/logos/meta-logo-color.png";
 
 
@@ -16,6 +18,7 @@ import MetaLogo from "../images/logos/meta-logo-color.png";
 const NavBar = () => {
 
     const navRef = useRef();
+    const [isOpen, setIsOpen] = useState(false)
 
 	const showNavbar = () => {
 		navRef.current.classList.toggle("responsive_nav");
@@ -41,7 +44,7 @@ const NavBar = () => {
                 <li><Link to="/Placestostay">Places to Stay</Link></li>
                 <li><a href="">NFTs</a></li>
                 <li><a href="">Community</a></li>
-                <Link to="/" className="btn connect-btn">Connect Wallet</Link>
+                <Link to="/" className="btn connect-btn" onClick={() => setIsOpen(true)}>Connect Wallet</Link>
                 <button
 					className="nav-btn nav-close-btn"
 					onClick={showNavbar}>
@@ -54,7 +57,7 @@ const NavBar = () => {
             <button className="nav-btn" onClick={showNavbar}>
 				<FaBars />
 			</button>
-
+            {isOpen && <Modal setIsOpen={setIsOpen} />}
         </nav>
      );
 }
