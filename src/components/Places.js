@@ -1,14 +1,14 @@
 import Heart from '../images/icons/heart.png';
 import Star from '../images/icons/star.png';
-import styles from '../index.css'
 
 
 
-const PlacesCard = (props) => {
+
+const PlacesCard = () => {
     return (  
         <>
             <div className="card">
-                <div className={`nft-pic ${props.className}`}>
+                <div className='nft-pic'>
                    
                     <i><img src={Heart} alt="heart icon" /></i>
                 </div>

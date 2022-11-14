@@ -15,9 +15,12 @@ function App() {
   const [isOpen, setIsOpen] = useState(false)
   return (
     <div className="App">
-
-     <NavBar />
-
+      <div>
+         <NavBar />
+         <button  onClick={() => setIsOpen(true)}>modal bitch</button>
+      </div>
+    
+     
         <Routes>
             <Route path='/' element= {<Home/>} />
             <Route path='/Placestostay' element= {<PlaceToStay/>} />
@@ -25,7 +28,7 @@ function App() {
 
 
 
-    <button  onClick={() => setIsOpen(true)}>modal bitch</button>
+  
      <Footer />
      {isOpen && <Modal setIsOpen={setIsOpen} />}
     </div>

@@ -265,8 +265,8 @@ section.sponsors {
 
 .card i {
   position: absolute;
-  top: 2rem;
-  right: 2rem;
+  top: 1rem;
+  right: 1rem;
 }
 
 .card div:last-child img {
@@ -397,6 +397,7 @@ section .company-details {
   flex-direction: column;
   justify-content: space-between;
   padding-bottom: 20px;
+  padding-right: 7rem;
 }
 
 .socials {
@@ -458,7 +459,7 @@ footer h4 span {
 
 /* ----- Media Queries ------ */
 
-@media screen and (max-width: 1240px){
+@media screen and(max-width: 1240px){
 
    h2 {
     font-size: 4rem;
@@ -552,19 +553,45 @@ footer h4 span {
 .learnmore .intro {
   padding: 200px;
 }
+
+.footer-logo {
+  width: 18rem;
+}
+footer h3 {
+  font-size: 1.6rem;
+}
+footer h4 {
+  font-size: 1.4rem;
+}
+footer ul a {
+  color: #fff;
+  margin-top: 4rem;
+  text-decoration: none;
+  font-size: 1.4rem;
+}
   
 }
 
 @media screen and (max-width: 1024px){
+  nav ul a {
+    font-size: 1.4rem;
+    margin-right: 1.5rem;
+  }
+  
+  .connect-btn {
+    width: 14rem;
+    font-size: 1.4rem;
+  }
   
   footer section {
     flex-direction: column;
     align-items: center;
   }
-  
-  .company-details {
-align-items: center;
 
+
+section .company-details {
+align-items: center;
+padding-right: 0;
   }
 
 .socials {
@@ -575,6 +602,23 @@ align-items: center;
     width: 200px;
  
   }
+  footer h4 {
+    text-align: center;
+    transform: translateX(-50px);
+  }
+  footer h3 {
+    font-size: 1.4rem;
+    text-align: center;
+  }
+  footer ul {
+    text-align: center;
+  }
+
+  .footer-col {
+    margin-right: 0;
+  }
+
+
 }
 
 
@@ -750,6 +794,35 @@ align-items: center;
     padding-left: 10px;
     margin-left: 30px;
   }
+
+  .search {
+    height: 5.4rem;
+    margin-top: 4.8rem;
+    display: flex;
+    flex-direction: column;
+   
+   }
+   
+   .search input {
+     flex: 100%;
+     height: 4.5rem;
+     border-radius: 8px 8px 0 0;
+   
+    
+   }
+   
+   ::placeholder {
+     font-size: 1.2rem;
+     text-align: center;
+   }
+   
+   .search-btn {
+    font-size: 1.4rem;
+     width: 100%;
+     line-height: 4.5rem;
+     border-radius: 0 0 8px 8px;
+     text-align: center;
+   }
 
 /* ----- Featured ------ */
 
