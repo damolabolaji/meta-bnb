@@ -40,11 +40,11 @@ const NavBar = () => {
   
 
             <ul ref={navRef}>
-                <li><Link to="/">Home</Link></li>
-                <li><Link to="/Placestostay">Places to Stay</Link></li>
-                <li><a href="">NFTs</a></li>
-                <li><a href="">Community</a></li>
-                <Link to="/" className="btn connect-btn" onClick={() => setIsOpen(true)}>Connect Wallet</Link>
+                <li><Link to="/" onClick={showNavbar}>Home</Link></li>
+                <li><Link to="/Placestostay" onClick={showNavbar}>Places to Stay</Link></li>
+                <li><a href="" onClick={showNavbar}>NFTs</a></li>
+                <li><a href="" onClick={showNavbar}>Community</a></li>
+                <Link to="/" className="btn connect-btn" onClick={() => setIsOpen(true), {showNavbar}}>Connect Wallet</Link>
                 <button
 					className="nav-btn nav-close-btn"
 					onClick={showNavbar}>

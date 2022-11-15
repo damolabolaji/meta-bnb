@@ -17,7 +17,7 @@ function App() {
     <div className="App">
       <div>
          <NavBar />
-         <button  onClick={() => setIsOpen(true)}>modal help</button>
+        
       </div>
     
      
