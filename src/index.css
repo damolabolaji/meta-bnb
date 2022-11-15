@@ -512,17 +512,12 @@ padding-left: 5rem;
   width: 18rem;
 }
 footer h3 {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
 }
 footer h4 {
   font-size: 1.4rem;
 }
-footer ul a {
-  color: #fff;
-  margin-top: 4rem;
-  text-decoration: none;
-  font-size: 1.4rem;
-}
+
   
 }
 
@@ -537,9 +532,9 @@ footer ul a {
   padding-right: 0;
   
  }
- .hero-image {
+ /* .hero-image {
   margin: 0 auto;
-}
+} */
  
 
 
@@ -637,13 +632,8 @@ footer ul a {
 
 }
 
-
-@media screen and (min-width: 481px) and (max-width: 768px) {
-  h2 {
-    font-size: 3rem; 
-  }
-
-
+@media screen and (max-width: 768px) {
+  
   /* ----- Navbar ------ */
 
   nav ul {
@@ -685,25 +675,15 @@ footer ul a {
     opacity: 1;
 	}
 
-  .connect-btn {
-    border: 1px solid #fff;
-  }
-  
-  /* ------Hero Section -------- */
-  
-  .hero-section h1 {
-    font-size: 4.5rem;
-  }
 
+  .hero-image img{
+    padding-top: 8rem;
+    width: 90%;
+    margin: 0 auto;
+    /* padding-right: 2rem; */
+   }
 
-  /* ------- Sponsors ------ */
-
-  .sponsors img {
-    width: 10rem;
-  }
-
-  
- /* ----- Learn More ----- */
+    /* ----- Learn More ----- */
 
 .learnmore section {
   flex-direction: column;
@@ -711,19 +691,92 @@ footer ul a {
   padding-top: 4rem;
   padding-bottom: 4rem;
 }
+.sponsor-logo {
+  gap: 1rem;
+}
+.sponsors img {
+  width: 10rem;
+}
+
+
+
 
 .learnmore .intro {
-  padding: 0 5rem;
-  margin-top: 3rem;
+padding: 0 5rem;
+margin-top: 3rem;
 }
 
 .images {
-  margin: 5rem 0;
+margin: 5rem 0;
 }
 
 .images img{
-  width: 45rem;
+width: 45rem;
 }
+
+/* --- Footer ----- */
+
+.footer-col,  footer section {
+  flex-direction: column;
+  align-items: center;
+ }
+section .company-details {
+ padding-right: 0;
+}
+
+ .footer-logo {
+   width: 25rem;
+   padding-bottom: 4rem;
+ }
+ .socials {
+   text-align: center;
+ }
+
+ .footer-col {
+   text-align: center;
+   gap: 5rem;
+   margin-right: unset;
+   margin: 4rem 0;
+   border-top: 1px solid #fff;
+   border-bottom: 1px solid #fff;
+   padding: 5rem;
+   width: 100%;
+ }
+
+ .footer-col div {
+   display: inline-block;
+ }
+
+ footer h4 {
+   text-align: center;
+   padding: 0;
+ }
+
+}
+
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  h2 {
+    font-size: 3rem; 
+  }
+  .hero-section h1 {
+    font-size: 3.2rem;
+  
+  }
+
+
+  .connect-btn {
+    border: 1px solid #fff;
+  }
+  
+  /* ------Hero Section -------- */
+  
+ 
+
+
+
+  /* ------- Sponsors ------ */
+
 
 
  /* ------ Places to Stay ------ */
@@ -737,56 +790,28 @@ footer ul a {
  }
 
 
-  /* --- Footer ----- */
-
-  .footer-col,  footer section {
-   flex-direction: column;
-   align-items: center;
-  }
-section .company-details {
-  padding-right: 0;
-}
-
-  .footer-logo {
-    width: 250px;
-    padding-bottom: 3rem;
-  }
-  .socials {
-    text-align: center;
-  }
-
-  .footer-col {
-    text-align: center;
-    gap: 5rem;
-    margin-right: unset;
-    margin: 4rem 0;
-    border-top: 1px solid #fff;
-    border-bottom: 1px solid #fff;
-    padding: 5rem;
-    width: 100%;
-  }
-
-  .footer-col div {
-    display: inline-block;
-  }
-
-  footer h4 {
-    text-align: center;
-    padding: 0;
-  }
+  
 
 
 }
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
+
   h2 {
-    font-size: 2.2rem; 
+    font-size: 2.2rem;
+  }
+
+  /* ----navbar ----- */
+
+  .main-nav img {
+    width: 16rem;
+   
   }
 
    /* ---Hero section---- */
 
   .hero-section h1 {
-    font-size: 3.5rem;
+    font-size: 3.2rem;
     text-align: center;
   }
   .hero-section p {
@@ -797,21 +822,13 @@ section .company-details {
     padding-left: 25px;
     padding-right: 25px;
   }
-  
 
-  .hero-image div {
-    width: 33%;
-    display: flex;
-    gap: 1.2rem;
-    transform: translateX(20%);
-    padding-left: 10px;
-    margin-left: 30px;
-  }
-
+  .images img{
+    width: 35rem;
+    }
+ 
   .search {
-    height: 5.4rem;
-    margin-top: 4.8rem;
-    display: flex;
+ 
     flex-direction: column;
    
    }
@@ -845,29 +862,39 @@ section .company-details {
   }
 
 
+  .featured-places {
+    padding: 0;
+}
+
+
   /* ------- Sponsors ------ */
 
   .sponsor-logo {
-   max-width: 100%;
-    gap: 2rem;
-   
+   width: 100%;
+    gap: 1rem;
+    margin: 0 auto;
+    padding: 1rem 0;
+    /* max-width: unset; */
   }
 
   
   .sponsors img {
-    margin: 0 auto;
-    width: 10rem;
-  }
-}
-
-@media screen and (max-width: 420px) {
-  .nav-btn {
-    font-size: 1.2rem;
+  
+    width: 7rem;
   }
 
-  .seconday-nav .btn {
-    font-size: 1.2rem;
-    margin-right: 0;
-    width: 10rem;
-  }
+
+  /* ----- learn  more */
+
+  .images img{
+    width: 30rem;
+    }
+
+    /* ---- footer ---- */
+
+    .footer-logo {
+      width: 20rem;
+    }
+
 }
+
