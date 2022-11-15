@@ -2,7 +2,7 @@
 import AllPlaces from "./AllPlaces";
 import { useRef } from "react";
 import SettIcon from './images/icons/setting.png'
-import PlacesCard from './components/Places';
+
 import { FaArrowDown, FaArrowUp } from "react-icons/fa";
 
 
@@ -49,14 +49,8 @@ const PlaceToStay = () => {
             
 
             <div className="featured-places">
-                <PlacesCard className="One"/>
-                <PlacesCard/>
-                <PlacesCard/>
-                <PlacesCard/>
-                <PlacesCard/>
-                <PlacesCard/>
-                <PlacesCard/>
-                <PlacesCard/>
+                <AllPlaces/>
+                
  
             </div>
         </section>
