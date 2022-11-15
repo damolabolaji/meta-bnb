@@ -78,7 +78,7 @@ ul .nav-close-btn {
 }
 
 
-.main-nav img {
+.main-nav .logo {
   width: 23.3rem;
  
 }
@@ -486,7 +486,7 @@ footer h4 span {
     margin-right: 5rem;
   }
 
-  .main-nav img {
+  .main-nav .logo {
     width: 20rem;
    
   }
@@ -861,7 +861,7 @@ section .company-details {
 
   /* ----navbar ----- */
 
-  .main-nav img {
+  .main-nav .logo {
     width: 16rem;
    
   }

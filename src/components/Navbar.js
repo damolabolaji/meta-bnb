@@ -39,7 +39,7 @@ const NavBar = () => {
 
 
             <Link to="/">
-            <img src={MetaLogo} alt="meta logo" />
+            <img src={MetaLogo} alt="meta logo" className='logo' />
             </Link>
   
 
