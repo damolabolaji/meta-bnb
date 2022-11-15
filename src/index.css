@@ -108,29 +108,18 @@ ul .nav-close-btn {
 
 .hero-section {
   padding: 12.5rem 0 6.7rem;
- 
+  margin: 0 auto;
 }
 .hero-section .intro {
-  flex: 48%;
+  padding: 0 5rem;
+  flex: 1;
 }
 
 .hero-image {
-  display: flex;
-  margin-left: 100px;
-  gap: 1.3rem;
+margin-left: 5rem;
+flex: 1;
 }
 
-.hero-section img {
-  max-width: 100%;
-  margin-top: 1rem;
-  border-radius: 10px;
-}
-.hero-image div {
-  width: 23.4rem;
-}
-.hero-image div:first-child {
-  margin-top: 10rem;
-}
 
 .hero-section h1 {
   font-size: 5.6rem;
@@ -272,6 +261,8 @@ section.sponsors {
 .card div:last-child img {
   margin-right: 1rem;
 }
+
+
 /* ----- Learn More ----- */
 
 div.learnmore {
@@ -279,22 +270,31 @@ div.learnmore {
    background-color: #A02279;
    margin: 0 auto;
    max-width: 144rem;
-   height: 700px;
-   padding: 0 6rem;
+ 
  }
 
  .learnmore section {
-  padding-top: 20rem;
+  align-items: center;
+  padding: 10rem 0
  }
 
+ .learnmore .intro {
+  flex: 50%;
+  margin-right: 5rem;
+ 
+}
+
+ .images {
+  flex: 50%;
+  margin-left: 10rem;
+ }
 
  .learnmore h2 {
-  
   color: #fff;
  }
 
  .learnmore p {
-  font-size: 1.6em;
+  font-size: 1.8rem;
   color: #fff;
   line-height: 3.5rem;
   margin: 30px 0 50px;
@@ -303,44 +303,6 @@ div.learnmore {
 
  .learnmore a {
   font-size: 1.4rem;
- }
-
- .images img {
-  width: 378px;
- }
-
- .images {
-  position: relative;
-  height: 450px;
-  padding-left: 850px;
-  padding-bottom: 4rem;
-  margin: 6rem 0;
- }
-
- .images img {
-  position: absolute;
-  border-radius: 10px;
-
- }
-
- .pic1 {
-  right: 10%;
-  top: -40%;
-  transform: rotate(8.76deg);
-  z-index: 1;
- }
-
- .pic2 {
-  right: 40%;
-  top: 10%;
-  transform: rotate(-26.02deg);
-  z-index: 2;
- }
- .pic3 {
-  right: 5%;
-  top: 20%;
-  transform: rotate(-8.76deg);
-  z-index: 3;
  }
 
  .learnmore-btn {
@@ -458,8 +420,9 @@ footer h4 span {
 
 
 /* ----- Media Queries ------ */
+/* (min-width: 1025px) and  */
 
-@media screen and(max-width: 1240px){
+@media screen and (max-width: 1240px){
 
    h2 {
     font-size: 4rem;
@@ -467,14 +430,9 @@ footer h4 span {
 
   /* ----- Navbar ------ */
 
-  nav {
-    padding-left: 5rem;
-    padding-right: 5rem;
-  }
-
-  nav ul a {
-    font-size: 1.6rem;
-    margin-right: 2rem;
+  nav.main-nav {
+    margin-left: 5rem;
+    margin-right: 5rem;
   }
 
   .main-nav img {
@@ -482,46 +440,35 @@ footer h4 span {
    
   }
 
+  nav ul a {
+    font-size: 1.6rem;
+  }
+
+  /* ----- Hero ----- */
   
-
-
-  /* ---Hero section---- */
-
-  .hero-section {
-    flex-direction: column;
-   }
-   .hero-section .intro {
-     padding-left: 50px;
-     padding-right: 50px;
-   }
-   .hero-section h1 {
-     font-size: 5rem;
+  .hero-section h1 {
+     font-size: 4.8rem;
    }
    .hero-section p {
-     font-size: 1.8rem;
+     font-size: 2rem;
+     margin-top: 3rem;
    }
   
-   .hero-image {
+   .hero-image img{
     padding-top: 2rem;
-    display: block;
     width: 100%;
     margin: 0 auto;
-  
+    padding-right: 5rem;
    }
 
-   .hero-image div {
-    width: 33%;
-    display: flex;
-    gap: 1.2rem;
-    transform: translateX(50%);
-    padding-left: 50px;
-  }
+
+  
 
   /* ------- Sponsors ------ */
 
   .sponsor-logo {
     margin: 0 auto;
-    width: 80%;
+    max-width: 70%;
     display: flex;
     justify-content: space-between;
     padding: 1rem 3rem;
@@ -544,15 +491,22 @@ footer h4 span {
     font-size: 1.6em;
     margin: 20px 0 30px;
    }
-.images {
-  transform: scale(.8);
-  padding-left: 550px;
-  translate: 10% 10%;
+
+.learnmore section {
+  padding: 10rem 5rem;
 }
 
 .learnmore .intro {
-  padding: 200px;
+width: 48rem;
+padding-left: 5rem;
 }
+
+.images img{
+  width: 48rem;
+}
+
+
+/* ------ footer ----- */
 
 .footer-logo {
   width: 18rem;
@@ -572,7 +526,65 @@ footer ul a {
   
 }
 
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 980px){
+.hero-section{
+  flex-direction: column;
+}
+
+.hero-image img{
+  padding-top: 2rem;
+  max-width: 100%;
+  padding-right: 0;
+  
+ }
+ .hero-image {
+  margin: 0 auto;
+}
+ 
+
+
+.learnmore .intro {
+ text-align: center;
+  /* margin-right: 0; */
+}
+
+.images img{
+  width: 42rem;
+}
+
+.learnmore h2 {
+  font-size: 4rem;
+ }
+
+ .learnmore p {
+  font-size: 1.4rem;
+  line-height: 3rem;
+ }
+
+ .learnmore-btn {
+  line-height: 4.3rem;
+ }
+}
+
+
+@media screen and (max-width: 930px) {
+  .images {
+    margin-left: 5rem;
+  }
+  .images img{
+    width: 40rem;
+  }
+
+  .learnmore h2 {
+    font-size: 3.2rem;
+   }
+  .learnmore section {
+    /* flex-direction: column; */
+  }
+}
+
+
+@media screen and (min-width: 769px) and (max-width: 1024px){
   nav ul a {
     font-size: 1.4rem;
     margin-right: 1.5rem;
@@ -582,21 +594,26 @@ footer ul a {
     width: 14rem;
     font-size: 1.4rem;
   }
+
+  .images img{
+    width: 42rem;
+  }
+
   
+  section .company-details {
+  align-items: center;
+  padding-right: 0;
+    }
+
+  .socials {
+    padding: 5rem;
+  }
+
   footer section {
     flex-direction: column;
     align-items: center;
   }
 
-
-section .company-details {
-align-items: center;
-padding-right: 0;
-  }
-
-.socials {
-  padding: 5rem;
-}
   
   .footer-logo {
     width: 200px;
@@ -604,7 +621,6 @@ padding-right: 0;
   }
   footer h4 {
     text-align: center;
-    transform: translateX(-50px);
   }
   footer h3 {
     font-size: 1.4rem;
@@ -622,7 +638,7 @@ padding-right: 0;
 }
 
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 481px) and (max-width: 768px) {
   h2 {
     font-size: 3rem; 
   }
@@ -689,32 +705,24 @@ padding-right: 0;
   
  /* ----- Learn More ----- */
 
- div.learnmore {
-  height: 50rem;
-}
-
 .learnmore section {
   flex-direction: column;
   text-align: center;
   padding-top: 4rem;
-  height: 400px;
+  padding-bottom: 4rem;
 }
+
+.learnmore .intro {
+  padding: 0 5rem;
+}
+
 .images {
- all: unset;
- display: flex;
- gap: 1rem;
- margin-top: 5rem;
+  margin: 5rem 0;
 }
 
-.images img {
-
-  all : unset;
-  width: 30%;
-  display: block;
-  border-radius: 10px;
-  margin: 0 auto;
-
- }
+.images img{
+  width: 45rem;
+}
 
 
  /* ------ Places to Stay ------ */
@@ -765,7 +773,7 @@ padding-right: 0;
 
 }
 
-@media screen and (max-width: 520px) {
+@media screen and (min-width: 320px) and (max-width: 480px) {
   h2 {
     font-size: 2.2rem; 
   }
@@ -835,7 +843,7 @@ padding-right: 0;
   /* ------- Sponsors ------ */
 
   .sponsor-logo {
-    flex-direction: column;
+   max-width: 100%;
     gap: 2rem;
    
   }
@@ -843,6 +851,7 @@ padding-right: 0;
   
   .sponsors img {
     margin: 0 auto;
+    width: 10rem;
   }
 }
 

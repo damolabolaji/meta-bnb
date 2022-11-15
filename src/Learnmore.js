@@ -1,6 +1,5 @@
-import Pic1 from './images/learns3.png'
-import Pic2 from './images/learns4.png'
-import Pic3 from './images/learnsusan.png'
+
+import Pic1 from './images/learnmore.png'
 
 
 
@@ -21,8 +20,7 @@ const LearnMore = () => {
 
                 <div className="images">
                     <img src={Pic1} alt="" className='pic1'/>
-                    <img src={Pic2} alt="" className='pic2'/>
-                    <img src={Pic3} alt="" className='pic3'/>
+                  
                 </div>
 
             </section>
