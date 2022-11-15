@@ -2,6 +2,8 @@
 
 //logo gradient DC3E88, B840AE, 843FE8
 
+import React from 'react';
+
 import { Link, Route, Routes } from 'react-router-dom';
 import { useRef, useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
@@ -24,6 +26,8 @@ const NavBar = () => {
 		navRef.current.classList.toggle("responsive_nav");
 	};
 
+   
+
     return ( 
         
          <Routes>
@@ -44,7 +48,7 @@ const NavBar = () => {
                 <li><Link to="/Placestostay" onClick={showNavbar}>Places to Stay</Link></li>
                 <li><a href="" onClick={showNavbar}>NFTs</a></li>
                 <li><a href="" onClick={showNavbar}>Community</a></li>
-                <Link to="/" className="btn connect-btn" onClick={() => setIsOpen(true), {showNavbar}}>Connect Wallet</Link>
+                <Link to="/" className="btn connect-btn" onClick={() => {setIsOpen(true)}}>Connect Wallet</Link>
                 <button
 					className="nav-btn nav-close-btn"
 					onClick={showNavbar}>

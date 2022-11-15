@@ -629,9 +629,7 @@ footer h4 {
   .learnmore h2 {
     font-size: 3.2rem;
    }
-  .learnmore section {
-    /* flex-direction: column; */
-  }
+  
 }
 
 
@@ -711,6 +709,7 @@ footer h4 {
 
   nav ul a {
     color: #fff;
+    margin-right: 0;
   }
 
   .responsive_nav {
@@ -865,6 +864,10 @@ section .company-details {
   .main-nav img {
     width: 16rem;
    
+  }
+
+  .connect-btn {
+    border: 1px solid #fff;
   }
 
    /* ---Hero section---- */
