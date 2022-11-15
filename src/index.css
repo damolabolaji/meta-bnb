@@ -599,7 +599,7 @@ footer ul a {
     width: 42rem;
   }
 
-  
+
   section .company-details {
   align-items: center;
   padding-right: 0;
@@ -714,6 +714,7 @@ footer ul a {
 
 .learnmore .intro {
   padding: 0 5rem;
+  margin-top: 3rem;
 }
 
 .images {
@@ -740,11 +741,15 @@ footer ul a {
 
   .footer-col,  footer section {
    flex-direction: column;
+   align-items: center;
   }
-
+section .company-details {
+  padding-right: 0;
+}
 
   .footer-logo {
-    width: 80%;
+    width: 250px;
+    padding-bottom: 3rem;
   }
   .socials {
     text-align: center;
