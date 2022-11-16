@@ -12,7 +12,8 @@ import { useState } from "react";
 
 
 function App() {
-  const [isOpen, setIsOpen] = useState(false)
+ 
+
   return (
     <div className="App">
       <div>
@@ -30,7 +31,7 @@ function App() {
 
   
      <Footer />
-     {isOpen && <Modal setIsOpen={setIsOpen} />}
+
     </div>
   );
 }

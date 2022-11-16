@@ -26,6 +26,10 @@ const NavBar = () => {
 		navRef.current.classList.toggle("responsive_nav");
 	};
 
+    const toOpen = () => {
+         setIsOpen(true)
+    }
+
    
 
     return ( 
@@ -48,7 +52,11 @@ const NavBar = () => {
                 <li><Link to="/Placestostay" onClick={showNavbar}>Places to Stay</Link></li>
                 <li><a href="/" onClick={showNavbar}>NFTs</a></li>
                 <li><a href="/" onClick={showNavbar}>Community</a></li>
-                <Link to="/" className="btn connect-btn" onClick={() => {setIsOpen(true)}}>Connect Wallet</Link>
+                <Link to="/" className="btn connect-btn" onClick={() => {
+                    showNavbar();
+                    toOpen();
+                } }>
+                    Connect Wallet</Link>
                 <button
 					className="nav-btn nav-close-btn"
 					onClick={showNavbar}>
@@ -61,7 +69,7 @@ const NavBar = () => {
             <button className="nav-btn" onClick={showNavbar}>
 				<FaBars />
 			</button>
-            {isOpen && <Modal setIsOpen={setIsOpen} />}
+            {isOpen && <Modal modalState={setIsOpen} />}
         </nav>
      );
 }

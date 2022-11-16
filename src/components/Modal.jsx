@@ -7,9 +7,9 @@ import Wallet from "../images/icons/wallet.png";
 
 
 
-const Modal = ({ setIsOpen }) => {
+const Modal = ({ modalState }) => {
     return ( 
-        <div className={styles.darkBG} onClick={() => setIsOpen(false)}>
+        <div className={styles.darkBG} onClick={() => modalState(false)}>
 
             <div className={styles.centered}>
                 
@@ -18,7 +18,7 @@ const Modal = ({ setIsOpen }) => {
 
                         <div className={styles.modalHeader}>
                             <h1 className={styles.heading}>Connect Wallet</h1>
-                            <i className={styles.closeBtn} onClick={() => setIsOpen(false)}> <FaTimes /></i>
+                            <i className={styles.closeBtn} onClick={() => modalState(false)}> <FaTimes /></i>
                         </div>
 
                         <div className={styles.modalContents}>
