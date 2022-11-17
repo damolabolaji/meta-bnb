@@ -1,13 +1,12 @@
-import logo from './logo.svg';
+
 
 import NavBar from './components/Navbar'
 import Footer from './components/Footer';
 import Home from './Home';
 import PlaceToStay from './Placestostay'
-import Modal from './components/Modal'
+
 
 import { Route, Routes } from 'react-router-dom'
-import { useState } from "react";
 
 
 

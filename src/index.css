@@ -68,7 +68,6 @@ ul .nav-close-btn {
 
 
 
-
 /* ------ Main Navbar ------- */
 
 .main-nav {
@@ -89,7 +88,7 @@ ul .nav-close-btn {
   border-radius: 10px;
   line-height: 4.8rem;
   background-color: #A02279;
-  /* margin-right: 0; */
+
 }
 
 .nav-btn {
@@ -103,6 +102,7 @@ ul .nav-close-btn {
 	opacity: 0;
 	font-size: 1.8rem;
 }
+
 
 /* ----- Homepage ----- */
 
@@ -313,9 +313,8 @@ div.learnmore {
  }
 
 
+
  /* ------ Places to Stay page ------- */
-
-
 
  .seconday-nav .btn {
   color: #1D1D1E;
@@ -466,7 +465,7 @@ footer h4 span {
 
 
 /* ----- Media Queries ------ */
-/* (min-width: 1025px) and  */
+
 
 @media screen and (max-width: 1240px){
 
@@ -511,8 +510,6 @@ footer h4 span {
     margin: 0 auto;
     padding-right: 5rem;
    }
-
-
   
 
   /* ------- Sponsors ------ */
@@ -568,9 +565,9 @@ footer h3 {
 footer h4 {
   font-size: 1.4rem;
 }
-
   
 }
+
 
 @media screen and (max-width: 980px){
 .hero-section{
@@ -583,15 +580,12 @@ footer h4 {
   padding-right: 0;
   
  }
- /* .hero-image {
-  margin: 0 auto;
-} */
- 
 
+ /* ----- Learn More ----- */
 
 .learnmore .intro {
  text-align: center;
-  /* margin-right: 0; */
+
 }
 
 .images img{
@@ -619,6 +613,9 @@ footer h4 {
 
 
 @media screen and (max-width: 930px) {
+
+  /* ----- Learn More ----- */
+
   .images {
     margin-left: 5rem;
   }
@@ -648,7 +645,6 @@ footer h4 {
     width: 42rem;
   }
 
-
   section .company-details {
   align-items: center;
   padding-right: 0;
@@ -663,7 +659,6 @@ footer h4 {
     align-items: center;
   }
 
-  
   .footer-logo {
     width: 200px;
  
@@ -715,9 +710,9 @@ footer h4 {
   .responsive_nav {
 		transform: none;
 	}
-.make-disappear {
+  .make-disappear {
   display: none;
-}
+  }
 
   .nav-btn {
     display: block;
@@ -738,10 +733,10 @@ footer h4 {
     padding-top: 8rem;
     width: 90%;
     margin: 0 auto;
-    /* padding-right: 2rem; */
+  
    }
 
-    /* ----- Learn More ----- */
+/* ----- Learn More ----- */
 
 .learnmore section {
   flex-direction: column;
@@ -755,9 +750,6 @@ footer h4 {
 .sponsors img {
   width: 10rem;
 }
-
-
-
 
 .learnmore .intro {
 padding: 0 5rem;
@@ -819,7 +811,6 @@ section .company-details {
   }
   .hero-section h1 {
     font-size: 3.2rem;
-  
   }
 
 
@@ -827,14 +818,6 @@ section .company-details {
     border: 1px solid #fff;
   }
   
-  /* ------Hero Section -------- */
-  
- 
-
-
-
-  /* ------- Sponsors ------ */
-
 
 
  /* ------ Places to Stay ------ */
@@ -843,8 +826,6 @@ section .company-details {
   top: 20%;
 	height: 50%;
   width: 50%;
-
-  
  }
 
 
